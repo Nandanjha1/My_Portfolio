@@ -1,6 +1,8 @@
 body {
     background-color: rgb(55, 64, 71);
+    color: white;
 }
+
 .home {
     position: relative;
     width: 100%;
@@ -16,7 +18,6 @@ body {
 
 .home-content {
     max-width: 600px;
-    color: white;
 }
 
 .home-content h3 {
@@ -98,7 +99,6 @@ body {
 
 .about-text h2 {
     font-size: 60px;
-    color: white;
 }
 
 .about-text h2 span {
@@ -108,7 +108,6 @@ body {
 .about-text h4 {
     font-size: 20px;
     font-weight: 600;
-    color: #fff;
     line-height: 1.7;
     margin: 15px 0 30px;
 }
@@ -120,23 +119,101 @@ body {
     margin-bottom: 4rem;
 }
 
-@keyframes slideRight {
+#services {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+.container1 {
+    padding: 90px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+        1px 1px 40px #0053b8f7
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 13px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan
+}
+
+.read:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan
+}
+
+.services-list div:hover {
+    transform: translateY(-100px);
+}
+
+@keyframes slideTop {
     0% {
-        transform: translateX(-100px);
+        transform: translateY(100px);
         opacity: 0;
     }
 
     100% {
-        transform: translateX(0px);
-        opacity: 0;
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
-
-/* .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 6rem;
-} */
