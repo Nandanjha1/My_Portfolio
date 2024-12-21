@@ -357,7 +357,7 @@ section {
 
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 90;
         ;
     }
 }
@@ -494,7 +494,7 @@ section {
 }
 
 .contact-text h2 {
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1;
     text-align: center;
 }
@@ -637,4 +637,7 @@ form textarea {
     100% {
         opacity: 1;
     }
+}
+.nav-link {
+    color: white;
 }
